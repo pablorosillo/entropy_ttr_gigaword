@@ -2,7 +2,7 @@
 
 In this paper we use six corpora in 3 different languages accounting for different degrees of morphological isolation and agglutination. Their information is summarized in the table below.
 
-| ID | Language | Source | Availability | Access |
+| Corpus ID | Language | Source | Availability | Access |
 |----------|----------|----------|----------|----------|
 | SPGC    | English    | Books    | Yes    | [Publication](doi.org/10.3390/e22010126)    |
 | SPA    | Spanish    | Online media    | Restricted    | [Mark Davies website](https://www.corpusdelespanol.org/web-dial/)    |
@@ -10,5 +10,13 @@ In this paper we use six corpora in 3 different languages accounting for differe
 | TwEN    | English    | Twitter    | In preparation    | -    |
 | TwES    | Spanish    | Twitter    | In preparation    | -    |
 | TwTR    | Turkish    | Twitter    | In preparation    | -    |
+
+To compile corpora and extract entropy and type-token ratio metrics we used the Python codes explained below.
+
+| Code | Details |
+|----------|----------|
+| [Metrics computation](corpora__analysis_general.py)    | Computing type-token ratio and entropy (using both PI and NSB estimators) given an aggregated corpus, i.e., a compilation of all the documents in one   |
+| [Corpora filtering](function_text_clean.py)    | Text cleaning (removing punctuation, digits, lowercasing)   |
+
 
 
