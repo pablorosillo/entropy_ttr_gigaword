@@ -15,7 +15,7 @@ To compile corpora and extract entropy and type-token ratio metrics we used the 
 
 | Code | Details |
 |----------|----------|
-| [Metrics computation](corpora__analysis_general.py)    | Computing type-token ratio and entropy (using both PI and NSB estimators) given an aggregated corpus, i.e., a compilation of all the documents in one   |
+| [Metrics computation](corpora_analysis_general.py)    | Computing type-token ratio and entropy (using both PI and NSB estimators) given an aggregated corpus, i.e., a compilation of all the documents in one   |
 | [Corpora filtering](function_text_clean.py)    | Text cleaning (removing punctuation, digits, lowercasing)   |
 
 
